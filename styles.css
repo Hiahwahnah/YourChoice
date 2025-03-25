@@ -1,76 +1,215 @@
-/* Reset some default styles */
-body, h1, p, label, input, textarea {
+/* Reset some basic styles */
+* {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header styles */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+nav ul {
+    list-style-type: none;
     padding: 0;
 }
 
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
-    padding: 20px;
+nav ul li {
+    display: inline;
+    margin: 0 15px;
 }
 
-header {
-    text-align: center;
-    margin-bottom: 30px;
-}
-
-h1 {
-    font-size: 2.5em;
-}
-
-nav {
-    margin-top: 20px;
-}
-
-a {
+nav ul li a {
+    color: #fff;
     text-decoration: none;
-    color: #1e90ff;
+    font-weight: bold;
 }
 
-.form-section {
-    background-color: #fff;
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Main content section */
+main {
     padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    max-width: 600px;
-    margin: 0 auto;
 }
 
+/* Section styling */
+section {
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #444;
+}
+
+section p {
+    font-size: 1rem;
+    color: #666;
+}
+
+/* Image section */
+#image img {
+    width: 100%;
+    max-width: 400px;
+    display: block;
+    margin: 0 auto;
+    border-radius: 8px;
+}
+
+/* Form styling */
 form {
     display: flex;
     flex-direction: column;
+    gap: 15px;
 }
 
 label {
-    margin: 10px 0 5px;
-    font-size: 1em;
+    font-size: 1rem;
+    color: #444;
 }
 
 input, textarea {
     padding: 10px;
-    font-size: 1em;
-    margin-bottom: 20px;
+    font-size: 1rem;
     border: 1px solid #ccc;
-    border-radius: 5px;
+    border-radius: 4px;
+}
+
+input:focus, textarea:focus {
+    border-color: #007BFF;
+    outline: none;
 }
 
 button {
-    padding: 10px;
-    background-color: #1e90ff;
+    padding: 10px 20px;
+    background-color: #ff0000;
     color: white;
     border: none;
-    border-radius: 5px;
-    font-size: 1em;
+    border-radius: 4px;
     cursor: pointer;
 }
 
 button:hover {
-    background-color: #5f9ea0;
+    background-color: #000000;
 }
 
-#errorMessage {
-    color: red;
-    font-size: 1em;
+/* Table styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table th, table td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+table th {
+    background-color: #f2f2f2;
+}
+
+/* CSS for Responsive Video Embed */
+section iframe {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto; /* Center the video */
+}
+
+/* Footer styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 30px;
+}
+
+/* Thank You page specific styles */
+#thank-you-message {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-top: 50px;
+}
+
+#thank-you-message p {
+    color: #444;
+}
+
+#thank-you-message a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+#thank-you-message a:hover {
+    text-decoration: underline;
+}
+
+/* Contact page specific styles */
+#contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#contact-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #444;
+}
+
+/* Responsive design: Adjust layout on smaller screens */
+@media screen and (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    section {
+        padding: 15px;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    table th, table td {
+        padding: 8px;
+    }
+
+    iframe {
+        max-width: 100%;
+    }
+
+    #contact-form {
+        padding: 20px;
+    }
 }

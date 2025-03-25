@@ -1,20 +1,50 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome - Contact Us</title>
+    <title>My Website</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>Welcome to Our Website!</h1>
+        <h1>Welcome to My Website</h1>
         <nav>
-            <a href="contact.html">Contact Us</a>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="thank-you.html">Thank You</a></li>
+            </ul>
         </nav>
     </header>
-    <section class="content">
-        <p>Welcome to our website. Feel free to reach out via our contact page.</p>
-    </section>
+    
+    <main>
+        <section>
+            <h2>About This Project</h2>
+            <p>This is a simple website to showcase basic HTML, CSS, and JavaScript skills. The website includes a contact form that sends an email using EmailJS and a thank-you page that greets users after form submission.</p>
+        </section>
+
+        <section id="image">
+            <h2>Project Image</h2>
+            <img src="https://images.unsplash.com/photo-1579952363873-27f3bade9f55?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Project Image">
+        </section>
+
+        <section>
+            <h2>Video Overview</h2>
+            <!-- Embedded YouTube video with specified width and height -->
+            <iframe 
+                width="640" 
+                height="360" 
+                src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen>
+            </iframe>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 My Website</p>
+    </footer>
 </body>
 </html>
